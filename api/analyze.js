@@ -103,4 +103,3 @@ module.exports = async (req, res) => {
     res.status(500).json({ error: "Erreur interne Solis", detail: String(err) });
   }
 };
-};
