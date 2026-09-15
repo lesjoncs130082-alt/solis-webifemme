@@ -1,0 +1,8 @@
+{
+  "name": "solis-webifemme",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Agent Solis (validation scientifique) - WebiFemme",
+  "engines": { "node": ">=18" }
+}
+
