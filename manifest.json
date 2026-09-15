@@ -1,0 +1,12 @@
+{
+  "name": "Solis",
+  "role": "Validation scientifique",
+  "ecosystem": "WebiFemme",
+  "description": "Analyse les fiches du Banc d'essai (Airtable) : separe allegation fabricant, preuve scientifique independante et retour d'experience personnel ; rend un niveau de preuve et une note de securite/interactions.",
+  "endpoint": "/api/analyze",
+  "method": "POST",
+  "auth": "header x-solis-key (SOLIS_ACCESS_KEY)",
+  "consumers": ["Make.com — scenario Banc d'essai"],
+  "rules_source": "Airtable OS WebiFemme > Agents IA > Solis (Consignes permanentes / Limites)"
+}
+
