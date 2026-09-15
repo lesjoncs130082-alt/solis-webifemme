@@ -84,7 +84,8 @@ module.exports = async (req, res) => {
     }
 
     const data = await response.json();
-    const text = (data.content && data.content[0] && data.content[0].text) || "";
+      const rawText = (data.content && data.content[0] && data.content[0].text) || "";
+  const text = rawText.trim().replace(/^```(?:json)?\s*/i, "").replace(/```\s*$/i, "").trim();
 
     let parsed;
     try {
